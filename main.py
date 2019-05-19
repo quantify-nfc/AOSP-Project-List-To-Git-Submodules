@@ -4,10 +4,11 @@ gitSubmodulesFile = open(".gitsubmodules", "w+")
 submodules = []
 
 for project in projectList:
+    p = project.rstrip()
     submoduleText = ""
-    submoduleText += "[submodule \"" + project + "\"]" + "\n"
-    submoduleText += "        path = " + project + "\n"
-    submoduleText += "        url = https://android.googlesource.com/platform/" + project + "\n"
+    submoduleText += "[submodule \"" + p + "\"]" + "\n"
+    submoduleText += "        path = " + p + "\n"
+    submoduleText += "        url = https://android.googlesource.com/platform/" + p + "\n"
 
     submodules.append(submoduleText)
 
