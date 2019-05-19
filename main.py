@@ -1,5 +1,5 @@
 projectList = open("project.list", "r")
-gitSubmodulesFile = open(".gitsubmodules", "w+")
+gitSubmodulesFile = open(".gitmodules", "w+")
 
 submodules = []
 
